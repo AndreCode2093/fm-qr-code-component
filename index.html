@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: hsl(212, 45%, 89%);
+            font-family: "Outfit", sans-serif;
+            display: grid;
+            min-height: 100dvh;
+        }
+
+        .card {
+            place-self: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin: 0 2rem 0 2rem;
+            text-align: center;
+
+            gap: 1rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 0.6rem;
+                margin-bottom: 5px;
+            }
+
+            .card__title {
+                font-size: 1rem;
+                color: hsl(218, 44%, 22%);
+                font-weight: 700;
+            }
+
+            .card__description {
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: hsl(220, 15%, 55%);
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        @media only screen and (min-width: 375px) {
+                .card__title {
+                    font-size: 1.4rem !important;
+                }
+
+                .card__description {
+                    font-size: 1rem !important;
+                }
+
+        }
+
+        @media only screen and (min-width: 375px) {
+            .card {
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="card">
+
+    <img src="/images/image-qr-code.png" alt="QrImage">
+
+    <div class="card__title">
+        Improve your front-end skills by building projects
+    </div>
+    <div class="card__description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
+</section>
+</body>
+</html>
